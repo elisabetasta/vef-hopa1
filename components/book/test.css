@@ -2,8 +2,9 @@
 
 .book-section {
   display: flex;
-  background-color: #E3CDB1;
+  background-color: #f7f1eb;
   padding: 10rem;
+  height: 15rem;
 }
 
 h1 {
