@@ -1,0 +1,34 @@
+/* Book section component */
+
+.book-section {
+  display: flex;
+  background-color: #E3CDB1;
+  padding: 10rem;
+}
+
+h1 {
+  font-size: xx-large;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  margin-right: 10em;
+}
+
+.image {
+  position: absolute;
+  left: 55%;
+  bottom: 12%;
+}
+
+
+button {
+  text-align: center;
+  padding: 1em 5em;
+  width: 50%;
+}
+
+
+/* Book section component */
