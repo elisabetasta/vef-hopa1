@@ -1,8 +1,17 @@
+:root {
+    /* Grid stillingar */
+  --columns: 12;
+  --gutter: 30px;
+  --offset: 20px;
+}
+
 .hero-section {
     display: flex;
     flex-direction: row;
     /* height: 800px; */
     background: #fafafa;
+    /* max-width: 1600px; */
+    gap: 1rem;
 }
 
 nav {
@@ -31,6 +40,8 @@ nav {
 }
 
 .text-section {
+    display: flex;
+    flex-direction: column;
     margin: 4rem;
 }
 
