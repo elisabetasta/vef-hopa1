@@ -1,0 +1,23 @@
+nav {
+    background-color: yellow;
+    display: flex;
+    flex-direction: row;
+}
+
+.yum-yum {
+    color: green;
+    margin: 1rem;
+}
+
+.links {
+    display: flex;
+    flex-direction: row;
+    margin-left: auto;
+    color: blue;
+}
+
+.nav-links {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    margin: 0.5rem;
+}
