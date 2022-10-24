@@ -1,13 +1,5 @@
 @charset "UTF-8";
 :root {
-  --spacing: 1rem;
-  --max-width: 1400px;
-  --color-primary: #f0f0f8;
-  --color-header: #fff;
-  --color-text: #000;
-  --color-border: #ccc;
-  --font-base-body-px: #($font-base-body-px);
-  --font-base-size: 1rem;
   --font-family-base: nunito, helvetica, arial, sans-serif;
   --font-family-heading: domine, georgia, serif;
   --columns: 12;
@@ -15,27 +7,67 @@
   --offset: 20px;
   --vertical-space: 30px;
 }
+html {
+  background: #fafafa;
+}
 .cards {
-    display: flex;
-    flex-direction: row;
-    gap: var(--gutter);
-    width: 100%;
-    padding-inline: 1rem;
+  display: flex;
+  flex-direction: row;
+  gap: var(--gutter);
+  width: 100%;
+  padding-inline: 1rem;
 }
 .card {
-    width: calc(100%/3);
+  width: calc(100% / 3);
 }
-.card-info{
-    display: flex;
-    flex-direction: row;
+.card p {
+  margin: 0;
+}
+.card-info {
+  display: flex;
+  flex-direction: row;
+  background-color: #ffffff;
+  padding: 1rem;
 }
 .card-text {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
+  width: 70%;
 }
-.card-info a{
+.card-text .month {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 21px;
+  display: flex;
+  align-items: flex-end;
+  color: #9b9b9b;
+}
+.card-text .desc {
+  font-family: playfair-display, serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 22px;
+}
 
+.card-info .card-link {
+  display: flex;
+  vertical-align: bottom;
+  width: 30%;
 }
-.card > .image {
-    height: 300px;
-  }
+.card-info .card-link a {
+  font-family: poppins, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  text-decoration: none;
+  color: #e3cdb1;
+  font-size: 16px;
+  text-align: right;
+  width: 100%;
+}
+.card .card-image img {
+  height: 290px;
+  object-fit: cover;
+  width: 100%;
+}
