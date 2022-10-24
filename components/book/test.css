@@ -6,7 +6,7 @@
   padding: 10rem;
 }
 
-h1 {
+.book-h1 {
   font-size: xx-large;
 }
 
@@ -24,7 +24,7 @@ h1 {
 }
 
 
-button {
+.book-button {
   text-align: center;
   padding: 1em 5em;
   width: 50%;
