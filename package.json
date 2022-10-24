@@ -7,6 +7,9 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "sass": "sass styles.scss styles.css",
     "sass-cards": "sass components/card/card.scss components/card/card.css",
+    "browser-sync": "browser-sync start --server --files homepage.html styles.css",
+    "sass-watch": "sass --watch *.scss styles.css",
+    "dev": "concurrently npm:sass-watch npm:browser-sync",
     "copy:html": "cpy ./*.html ./build/",
     "copy:js": "cpy ./*.css ./build/",
     "build": "concurrently npm:copy:*"

@@ -1,0 +1,82 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  :root {
+    --columns: 12;
+    --gutter: 30px;
+    --offset: 20px;
+    --vertical-space: calc(var(--gutter));
+  }
+  .recipie {
+    margin: 1rem;
+    display: flex;
+    flex-direction: row;
+    gap: 13rem;
+  }
+  .method h2 {
+    margin-bottom: 2rem;
+  }
+  .ingredients h2 {
+    margin-bottom: 2rem;
+    font-family: playfair-display, serif;
+    font-weight: 700;
+    size: 40px;
+    color: #d0d0d0;
+  }
+  .ingredients h3 {
+    font-family: "Poppins";
+    font-weight: 400;
+    font-size: 16px;
+  
+    margin-bottom: 0.5rem;
+  }
+  .ingredients-list {
+    margin-bottom: 2rem;
+  }
+  .ingredients-row {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+  }
+  .row1 {
+    display: flex;
+    flex-direction: column;
+    font-family: playfair-display, serif;
+    font-weight: 800;
+    font-size: 18px;
+    color: #e3cdb1;
+    gap: 1rem;
+  }
+  .row2 {
+    margin-top: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    color: #9b9b9b;
+    gap: 1rem;
+  }
+  .method {
+    max-width: 850px;
+  }
+  .method h2 {
+    font-family: playfair-display, serif;
+    font-weight: 700;
+    size: 40px;
+    color: #d0d0d0;
+  }
+  .method p {
+    margin-bottom: 2rem;
+  
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 32px;
+    color: #5e5b69;
+  }
+  
