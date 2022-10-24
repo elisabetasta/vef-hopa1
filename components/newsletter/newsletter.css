@@ -19,18 +19,27 @@
 .subscribe-button {
   background-color: #000000;
   color: #E3CDB1;
-  border: 1px solid #E3CDB1;
+  border: 1px solid hsl(34, 47%, 79%);
   height: 50px;
+  padding
 }
 
 
 .email-form {
-  display: flex;
+  margin-top: 0.5em;
+  border: 0px solid black;
+  border-bottom: 1px solid white;
   background-color: #000000;
   padding: 1em;
+  text-align: left;
+  padding: 0 2em 0 0;
 
 }
 
 .email > .kicker {
   color: #FFFFFF
+}
+
+.kicker {
+  color: hsl(34, 47%, 79%)
 }
