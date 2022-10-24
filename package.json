@@ -1,0 +1,30 @@
+{
+  "name": "vef-hopa1",
+  "version": "1.0.0",
+  "description": "Hópaverkefni 1 í Vefforritun 1 2022",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "sass styles.scss styles.css",
+    "sass-cards": "sass components/card/card.scss components/card/card.css",
+    "copy:html": "cpy ./*.html ./build/",
+    "copy:js": "cpy ./*.js ./build/",
+    "build": "concurrently npm:copy:*"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/elisabetasta/vef-hopa1.git"
+  },
+  "author": "Ívan Már Þrastarson, Elísa Björg Tryggvadóttir, Elísabet Ásta Ólafsdóttir, Friðrik Snær Björnsson",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/elisabetasta/vef-hopa1/issues"
+  },
+  "homepage": "https://github.com/elisabetasta/vef-hopa1#readme",
+  "dependencies": {
+    "browser-sync": "^2.27.10",
+    "concurrently": "^7.5.0",
+    "cpy-cli": "^4.2.0",
+    "sass": "^1.55.0"
+  }
+}

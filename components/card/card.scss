@@ -1,3 +1,4 @@
+@charset "UTF-8";
 :root {
   --font-family-base: nunito, helvetica, arial, sans-serif;
   --font-family-heading: domine, georgia, serif;
@@ -6,50 +7,39 @@
   --offset: 20px;
   --vertical-space: 30px;
 }
-
 html {
   background: #fafafa;
 }
-
 .cards {
   display: flex;
   flex-direction: column;
   gap: var(--gutter);
   width: 100%;
   padding-inline: 1rem;
-}
-@media (min-width: 800px) {
-  .cards {
+  @media (min-width: 800px) {
     flex-direction: row;
   }
 }
-
 .card {
   width: 100%;
-}
-@media (min-width: 800px) {
-  .card {
-    width: 33.3333333333%;
+  @media (min-width: 800px) {
+    width: calc(100% / 3);
   }
 }
-
 .card p {
   margin: 0;
 }
-
 .card-info {
   display: flex;
   flex-direction: row;
   background-color: #ffffff;
   padding: 1rem;
 }
-
 .card-text {
   display: flex;
   flex-direction: column;
   width: 70%;
 }
-
 .card-text .month {
   font-family: "Poppins";
   font-style: normal;
@@ -60,7 +50,6 @@ html {
   align-items: flex-end;
   color: #9b9b9b;
 }
-
 .card-text .desc {
   font-family: playfair-display, serif;
   font-weight: 700;
@@ -73,7 +62,6 @@ html {
   vertical-align: bottom;
   width: 30%;
 }
-
 .card-info .card-link a {
   font-family: poppins, sans-serif;
   font-weight: 400;
@@ -84,12 +72,9 @@ html {
   text-align: right;
   width: 100%;
 }
-
 .card .card-image img {
   height: 290px;
   object-fit: cover;
   object-position: 50% 50%;
   width: 100%;
 }
-
-/*# sourceMappingURL=card.css.map */
