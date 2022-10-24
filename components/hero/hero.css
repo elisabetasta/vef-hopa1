@@ -1,9 +1,47 @@
-:root {
+/* Setjum inn „reset“ sem fjarlægir margin og padding af öllu */
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Reiknum stærð á öllum boxum sem border-box */
+  html {
+    box-sizing: border-box;
+  
+    /* Lætur skroll innan síðu taka tíma */
+    scroll-behavior: smooth;
+  }
+  
+  /* og látum erfast á allt */
+  *,
+  *:before,
+  *:after {
+    box-sizing: inherit;
+  }
+  
+  /* Breytur sem skal nota */
+  
+  :root {
+    /* Grunn bilið okkar er 1rem == 16px */
+    --spacing: 1rem;
+    /* Hámarksbreidd á efni */
+    --max-width: 1600px;
+  
+    --color-primary: #f0f0f8;
+  
+    --color-header: #fff;
+    --color-text: #000;
+    --color-border: #ccc;
+  
+    /* Letur stillingar */
+    --font-base-body-px: 16px;
+    --font-base-size: 1rem;
+  
     /* Grid stillingar */
-  --columns: 12;
-  --gutter: 30px;
-  --offset: 20px;
-}
+    --columns: 12;
+    --gutter: 30px;
+    --offset: 155px;
+  }
 
 .hero-section {
     display: flex;
