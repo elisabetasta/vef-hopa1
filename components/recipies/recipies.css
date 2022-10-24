@@ -47,6 +47,7 @@
   font-weight: 800;
   font-size: 18px;
   color: #e3cdb1;
+  gap: 1rem;
 }
 .row2 {
   margin-top: 0.5rem;
@@ -57,6 +58,7 @@
   font-weight: 300;
   font-size: 14px;
   color: #9b9b9b;
+  gap: 1rem;
 }
 .method {
   max-width: 850px;
