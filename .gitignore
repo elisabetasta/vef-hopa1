@@ -23,7 +23,7 @@ yarn-error.log*
 .env
 
 # Mögulegar þýddar skrár fyrir dev
-styles.css
+# styles.css
 styles.css.map
 
 # Mögulegar þýddar skrár fyrir production build

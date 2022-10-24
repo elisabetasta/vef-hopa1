@@ -8,7 +8,7 @@
     "sass": "sass styles.scss styles.css",
     "sass-cards": "sass components/card/card.scss components/card/card.css",
     "copy:html": "cpy ./*.html ./build/",
-    "copy:js": "cpy ./*.js ./build/",
+    "copy:js": "cpy ./*.css ./build/",
     "build": "concurrently npm:copy:*"
   },
   "repository": {
