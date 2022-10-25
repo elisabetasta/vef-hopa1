@@ -2,6 +2,8 @@
   display: flex;
   background-color: #f7f1eb;
   padding: 10rem;
+  height: 45rem;
+  margin-block-end: 15rem;
 }
 
 h1 {
@@ -15,13 +17,13 @@ h1 {
 }
 
 .image {
-  position: absolute;
-  left: 55%;
+  position: relative;
+  left: 10%;
   top: 7%;
 }
 
-.book-heading{
-  font-family: 'Playfair Display';
+.book-heading {
+  font-family: "Playfair Display";
   font-style: normal;
   font-weight: 700;
   font-size: 60px;
@@ -30,12 +32,11 @@ h1 {
   margin-block: 0;
 }
 
-.book-text{
-  font-family: 'Poppins';
-font-style: normal;
-font-weight: 300;
-font-size: 18px;
-line-height: 32px;
-color: #5E5B69;
-
+.book-text {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 32px;
+  color: #5e5b69;
 }
