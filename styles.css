@@ -554,4 +554,50 @@ header {
   color: #e3cdb1;
 }
 
+footer {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+footer hr {
+  width: 70%;
+  margin: 0 auto 0 auto;
+}
+
+.footer-text {
+  text-align: center;
+  font-family: "Poppins";
+}
+
+.footer-inconlinks {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  margin: auto;
+}
+
+.iconborder img {
+  height: 30px;
+  width: 30px;
+  justify-self: center;
+}
+
+.iconborder {
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+  border: 1px solid #e3cdb1;
+  border-radius: 10rem;
+  height: 1.5rem;
+  width: 1.5rem;
+}
+
+.site-name p {
+  text-align: center;
+  font-family: "Poppins";
+  font-weight: 300;
+  color: #d6d6d6;
+}
+
 /*# sourceMappingURL=styles.css.map */
