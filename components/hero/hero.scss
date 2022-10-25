@@ -150,6 +150,9 @@ header {
 nav {
     display: flex;
     flex-direction: row;
+    background-color: var(--color-primary);
+    order: 2;
+    overflow: hidden;
 }
 
 .yum-yum {
@@ -159,7 +162,7 @@ nav {
     gap: calc(var(--gutter));
     /* row-gap: var(--gutter); */
     row-gap: 0;
-    margin-top: 2rem;
+    margin-top: 1rem;
     /* grid-column: 1 / span 2; */
 }
 
@@ -264,6 +267,7 @@ header {
     display: flex;
     flex-direction: column;
     gap: var(--gutter);
+    margin-top: 5rem;
 }
 
 
