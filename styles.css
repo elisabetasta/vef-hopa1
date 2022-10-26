@@ -561,6 +561,7 @@ footer {
   display: flex;
   flex-direction: column;
   gap: 1rem;
+  height: 100%;
 }
 
 footer hr {
@@ -571,6 +572,7 @@ footer hr {
 .footer-text {
   text-align: center;
   font-family: "Poppins";
+  margin-top: 5rem;
 }
 
 .footer-inconlinks {
@@ -578,6 +580,7 @@ footer hr {
   flex-direction: row;
   gap: 1rem;
   margin: auto;
+  margin-top: 1.5rem;
 }
 
 .iconborder img {
@@ -589,11 +592,13 @@ footer hr {
 .iconborder {
   display: flex;
   justify-content: center;
-  padding: 1rem;
+  padding: 1.7rem;
   border: 1px solid #e3cdb1;
   border-radius: 10rem;
   height: 1.5rem;
   width: 1.5rem;
+  justify-content: center;
+  align-items: center;
 }
 
 .site-name p {
@@ -601,6 +606,8 @@ footer hr {
   font-family: "Poppins";
   font-weight: 300;
   color: #d6d6d6;
+  margin-bottom: 5rem;
+  margin-top: 1rem;
 }
 
 .recipes-wrapper {
