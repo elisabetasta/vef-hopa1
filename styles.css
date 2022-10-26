@@ -285,6 +285,7 @@ nav {
   background-color: var(--color-primary);
   order: 2;
   overflow: hidden;
+  z-index: 9999;
 }
 
 .yum-yum {
@@ -412,8 +413,8 @@ header {
 
 /* .info .kicker {
     color: #e3cdb1;
-    /* font-size: var(--font-base-kicker); 
-    /* font-family: var(--font-family-base); 
+    /* font-size: var(--font-base-kicker);
+    /* font-family: var(--font-family-base);
 } */
 .content {
   width: 50%;
@@ -659,6 +660,10 @@ h1 {
   font-size: 18px;
   line-height: 32px;
   color: #5e5b69;
+}
+
+img {
+  z-index: -2;
 }
 
 /*# sourceMappingURL=styles.css.map */

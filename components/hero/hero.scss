@@ -153,6 +153,8 @@ nav {
     background-color: var(--color-primary);
     order: 2;
     overflow: hidden;
+    z-index: 9999;
+
 }
 
 .yum-yum {
@@ -289,13 +291,13 @@ header {
 .info .content p {
     margin-bottom: calc(var(--spacing) * 2);
     color: #5E5B69;
-    
+
 }
 
 /* .info .kicker {
     color: #e3cdb1;
-    /* font-size: var(--font-base-kicker); 
-    /* font-family: var(--font-family-base); 
+    /* font-size: var(--font-base-kicker);
+    /* font-family: var(--font-family-base);
 } */
 
 .content {
