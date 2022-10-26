@@ -17,7 +17,6 @@ html {
   flex-direction: column;
   gap: var(--gutter);
   width: 100%;
-  padding-inline: 1rem;
 }
 @media (min-width: 800px) {
   .cards {
@@ -283,6 +282,9 @@ header {
 nav {
   display: flex;
   flex-direction: row;
+  background-color: var(--color-primary);
+  order: 2;
+  overflow: hidden;
 }
 
 .yum-yum {
@@ -292,7 +294,7 @@ nav {
   gap: calc(var(--gutter));
   /* row-gap: var(--gutter); */
   row-gap: 0;
-  margin-top: 2rem;
+  margin-top: 1rem;
   /* grid-column: 1 / span 2; */
 }
 
@@ -387,6 +389,7 @@ header {
   display: flex;
   flex-direction: column;
   gap: var(--gutter);
+  margin-top: 5rem;
 }
 
 /* Info blokk */
@@ -598,6 +601,64 @@ footer hr {
   font-family: "Poppins";
   font-weight: 300;
   color: #d6d6d6;
+}
+
+.recipes-wrapper {
+  margin-block-start: 16rem;
+  margin-inline: 1rem;
+}
+@media (min-width: 800px) {
+  .recipes-wrapper {
+    margin-inline: 6rem;
+  }
+}
+
+nav {
+  position: fixed;
+  top: 0;
+}
+
+.book-section {
+  display: flex;
+  background-color: #f7f1eb;
+  padding: 10rem;
+  height: 45rem;
+  margin-block-end: 15rem;
+}
+
+h1 {
+  font-size: xx-large;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  width: 47%;
+}
+
+.image {
+  position: relative;
+  left: 10%;
+  top: 7%;
+}
+
+.book-heading {
+  font-family: "Playfair Display";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 80px;
+  color: #000000;
+  margin-block: 0;
+}
+
+.book-text {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 32px;
+  color: #5e5b69;
 }
 
 /*# sourceMappingURL=styles.css.map */

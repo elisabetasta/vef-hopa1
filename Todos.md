@@ -1,8 +1,5 @@
 # Todos
 
-Taka inn eina "einingu" úr figma skjalinu og setja hann í sér folder í components með style og html.
+- Laga nav bar þannig að það haldist alltaf uppi [UPDATE það er alltaf uppi nema hvað að myndirnar fara yfir, mætti kannski laga með z-index?]
 
-Einingarnar verða síðan settar inn á index.html þegar þær eru tilbúnar.
-
-ATH dæmatímakennari segir að það sé ekki sniðugt að vera með components því "við erum ekki komin það 
-langt í námsefninu um það" svo við ættum frekar að gera bara copy/paste í html en endurnýta css.
+- Laga alla takka þannig þeir hafi hover-effect

@@ -15,7 +15,6 @@ html {
   flex-direction: column;
   gap: var(--gutter);
   width: 100%;
-  padding-inline: 1rem;
   @media (min-width: 800px) {
     flex-direction: row;
   }
