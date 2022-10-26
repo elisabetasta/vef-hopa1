@@ -60,8 +60,9 @@ header {
 /* Almennt */
 
 nav {
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    /* flex-direction: row; */
+    grid-template-columns: repeat(12, 1fr);
 }
 
 .yum-yum {
@@ -78,8 +79,8 @@ nav {
 .links {
     display: flex;
     flex-direction: row;
-    grid-template-rows: repeat(2, 1fr);
-    grid-template-columns: repeat(var(--columns), 1fr);
+    /* grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(var(--columns), 1fr); */
     gap: calc(var(--gutter));
     /* row-gap: var(--gutter); */
     row-gap: 0;
@@ -198,6 +199,10 @@ header {
     margin-bottom: calc(var(--spacing) * 2);
     color: #5E5B69;
     
+}
+
+.nav-links {
+    grid-column: 1;
 }
 
 /* .info .kicker {
