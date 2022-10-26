@@ -127,7 +127,6 @@ h3 {
   height: 50px;
   padding: 0 5em;
 }
-
 .email-form {
   font-size: 1.25em;
   margin-top: 0.5em;
@@ -267,10 +266,8 @@ img {
 
 .button {
   display: inline-block;
-
   /* font-family: var(--font-family-base); */
   text-decoration: none;
-
   text-align: center;
   color: #E3CDB1;
   background-color: #fafafa;
@@ -284,12 +281,6 @@ img {
   background-color: #E3CDB1;
   color: white;
 }
-
-.button-2:hover {
-  background-color: #e3cdb1;
-  color: #f7f1eb;
-}
-
 
 /* Layout */
 .wrapper {
@@ -381,7 +372,7 @@ header {
 
 .ingredients h2 {
   margin-bottom: 2rem;
-  font-family: 'playfair-display', serif;
+  font-family: playfair-display, serif;
   font-weight: 700;
   size: 40px;
   color: #d0d0d0;
