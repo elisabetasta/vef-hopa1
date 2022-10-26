@@ -120,13 +120,6 @@ h3 {
   padding: 0 5em;
 }
 
-.subscribe-button:hover {
-  background-color: #E3CDB1;
-  color: #000;
-  border: 1px solid hsl(34deg, 47%, 79%);
-  height: 50px;
-  padding: 0 5em;
-}
 .email-form {
   font-size: 1.25em;
   margin-top: 0.5em;
