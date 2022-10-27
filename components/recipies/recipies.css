@@ -9,20 +9,22 @@
   --offset: 20px;
   --vertical-space: calc(var(--gutter));
 }
+
 .recipie {
-  margin: 1rem;
+  margin: var(--gutter);
   display: flex;
-  flex-direction: row;
-  gap: 13rem;
+  flex-direction: column;
+  gap: 2rem;
+  margin-left: 2rem;
 }
 .method h2 {
   margin-bottom: 2rem;
 }
 .ingredients h2 {
-  margin-bottom: 2rem;
+  margin-bottom: 2.5rem;
   font-family: playfair-display, serif;
   font-weight: 700;
-  size: 40px;
+  font-size: 30px;
   color: #d0d0d0;
 }
 .ingredients h3 {
@@ -38,27 +40,29 @@
 .ingredients-row {
   display: flex;
   flex-direction: row;
-  gap: 1rem;
+  gap: 2rem;
 }
 .row1 {
   display: flex;
   flex-direction: column;
   font-family: playfair-display, serif;
   font-weight: 800;
-  font-size: 18px;
+  font-size: 26px;
   color: #e3cdb1;
   gap: 1rem;
 }
 .row2 {
-  margin-top: 0.5rem;
+  margin-top: 0.7rem;
   display: flex;
   flex-direction: column;
   font-family: "Poppins";
-  font-style: normal;
-  font-weight: 300;
-  font-size: 14px;
+
+  font-weight: 200;
+  font-size: 15px;
   color: #9b9b9b;
-  gap: 1rem;
+  gap: 1.75rem;
+
+  margin-left: 2rem;
 }
 .method {
   max-width: 850px;
@@ -66,7 +70,7 @@
 .method h2 {
   font-family: playfair-display, serif;
   font-weight: 700;
-  size: 40px;
+  font-size: 30px;
   color: #d0d0d0;
 }
 .method p {
@@ -78,4 +82,20 @@
   font-size: 14px;
   line-height: 32px;
   color: #5e5b69;
+}
+
+@media (min-width: 600px) {
+  .recipie {
+    display: grid;
+
+    grid-template-columns: repeat(var(--columns), 1fr);
+    gap: var(--gutter);
+    row-gap: var(--gutter);
+  }
+  .ingredients {
+    grid-column: 1 / span 5;
+  }
+  .method {
+    grid-column: 7 / span 5;
+  }
 }
