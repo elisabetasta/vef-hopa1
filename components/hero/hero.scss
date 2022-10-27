@@ -68,6 +68,15 @@ nav {
 
 }
 
+nav a{
+    text-decoration: none;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    color: #9B9B9B;
+}
+
 .yum-yum {
     // display: grid;
     grid-template-rows: repeat(2, 1fr);
