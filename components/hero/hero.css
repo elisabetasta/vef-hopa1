@@ -169,7 +169,7 @@ header {
     max-width: var(--max-width);
 
     margin-right: auto;
-    margin-left: auto;
+    /* margin-left: auto; */
     width: calc(100% - (2 * var(--offset)));
 }
 
