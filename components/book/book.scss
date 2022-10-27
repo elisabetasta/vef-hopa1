@@ -3,7 +3,15 @@
 
   margin-block-end: 15rem;
   flex-direction: column;
+  @media (min-width: 800px) {
+    flex-direction: row;
+  }
   align-items: center;
+}
+.book-section .see-more-button{
+  @media (min-width: 800px) {
+    text-align: left;
+  }
 }
 
 h1 {
@@ -27,6 +35,12 @@ h1 {
   position: relative;
   top: -100px;
   justify-content: space-around;
+  @media (min-width: 800px) {
+    position: relative;
+    left: 10%;
+    top: 7%;
+  }
+
 }
 .book-heading {
   font-family: "Playfair Display";
