@@ -60,6 +60,7 @@ header {
 nav {
     display: grid;
     background-color: var(--color-primary);
+    // background-color: red;
     order: 2;
     overflow: hidden;
     z-index: 9999;
@@ -158,6 +159,7 @@ img {
     grid-template-rows: auto;
     grid-template-columns: 100%;
     margin: 0 auto;
+    // margin-left: auto;
     gap: var(--gutter);
     /* color: var(--color-primary); */
 }
@@ -167,7 +169,7 @@ header {
     grid-template-rows: auto;
     grid-template-columns: 100%;
     gap: var(--gutter);
-
+    // background-color: blue;
 
     /* min-height: 100vh; */
     max-width: var(--max-width);
