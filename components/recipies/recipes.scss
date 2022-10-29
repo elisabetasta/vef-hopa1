@@ -12,18 +12,18 @@
 .recipie {
   margin: 1rem;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   gap: 13rem;
 }
 .method h2 {
   margin-bottom: 2rem;
 }
 .ingredients h2 {
-  margin-bottom: 2rem;
-  font-family: playfair-display, serif;
+  font-family: 'Playfair Display';
+  font-style: normal;
   font-weight: 700;
-  size: 40px;
-  color: #d0d0d0;
+  font-size: 40px;
+  color: #D0D0D0;
 }
 .ingredients h3 {
   font-family: "Poppins";
@@ -70,12 +70,9 @@
   color: #d0d0d0;
 }
 .method p {
-  margin-bottom: 2rem;
-
-  font-family: "Poppins";
+  font-family: 'Poppins';
   font-style: normal;
   font-weight: 300;
-  font-size: 14px;
-  line-height: 32px;
-  color: #5e5b69;
+  font-size: 18px;
+  color: #5E5B69;
 }
