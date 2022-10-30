@@ -1398,4 +1398,16 @@ h3 {
   color: white;
 }
 
+.img-overlay-wrap {
+  position: relative;
+  display: inline-block; /* <= shrinks container to image size */
+  transition: transform 150ms ease-in-out;
+}
+
+.img-overlay-wrap svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
 /*# sourceMappingURL=styles.css.map */
