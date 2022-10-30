@@ -49,7 +49,7 @@ html {
   --offset: 155px;
 }
 
-.wrapper header {
+
   background-color: var(--color-primary);
   height: 800px;
 }
@@ -57,6 +57,7 @@ html {
 /* Almennt */
 
 nav {
+
   display: grid;
   background-color: var(--color-primary);
   order: 2;
@@ -65,6 +66,7 @@ nav {
   // width: 100%;
   grid-template-columns: repeat(var(--columns), 1fr);
 }
+
 
 nav a {
   text-decoration: none;
@@ -167,7 +169,7 @@ img {
 //   /* color: var(--color-primary); */
 // }
 
-header {
+.wrapper header {
   display: grid;
   grid-template-rows: auto;
   grid-template-columns: 100%;
@@ -190,6 +192,24 @@ header {
 }
 
 /* Info blokk */
+
+
+.wrapper {
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 100%;
+    margin: 0 auto;
+    // margin-left: auto;
+    gap: var(--gutter);
+    /* color: var(--color-primary); */
+}
+
+header {
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 100%;
+    gap: var(--gutter);
+    // background-color: blue;
 
 .info {
   display: flex;
@@ -244,7 +264,10 @@ main {
 }
 
 @media (max-width: 800px) {
-  header {
+
+
+  .wrapper header {
+
     height: auto;
   }
 
@@ -283,11 +306,6 @@ main {
     visibility: hidden;
   }
 
-  .hero-image {
-    // background-position: bottom right;
-    // background-size: cover;
-    // flex: 0;
-  }
 
   h2 {
     font-size: 32px;
@@ -300,4 +318,5 @@ main {
   .hero-button {
     width: 100%;
   }
+}
 }
