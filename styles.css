@@ -239,7 +239,7 @@ img {
 }
 
 /* Layout */
-header {
+.wrapper header {
   display: grid;
   grid-template-rows: auto;
   grid-template-columns: 100%;
@@ -260,40 +260,49 @@ header {
 }
 
 /* Info blokk */
-.info {
+.wrapper {
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: 100%;
+  margin: 0 auto;
+  gap: var(--gutter);
+  /* color: var(--color-primary); */
+}
+
+header {
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: 100%;
+  gap: var(--gutter);
+}
+header .info {
   display: flex;
   flex-direction: row;
   grid-column: 1/span 12;
 }
-
-main {
+header main {
   height: 40%;
 }
-
-.info-left .content {
+header .info-left .content {
   /* order: -1; */
   flex: 1;
 }
-
-.info .content p {
+header .info .content p {
   margin-bottom: calc(var(--spacing) * 2);
   color: #5e5b69;
 }
-
-.hero-content {
+header .hero-content {
   width: 48%;
   display: grid;
   align-content: center;
 }
-
-.info-boxes {
+header .info-boxes {
   display: grid;
   gap: calc(var(--gutter));
   row-gap: 0;
 }
-
 @media (max-width: 1200px) {
-  .info {
+  header .info {
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -301,20 +310,20 @@ main {
     background-size: cover;
     background-image: url(../../images/cake.png);
   }
-  .hero-img-section {
+  header .hero-img-section {
     visibility: hidden;
   }
 }
 @media (max-width: 800px) {
-  header {
+  header .wrapper header {
     height: auto;
   }
-  .info-boxes {
+  header .info-boxes {
     display: flex;
     flex-direction: column;
     gap: var(--gutter);
   }
-  .info {
+  header .info {
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -322,7 +331,7 @@ main {
     background-size: cover;
     background-image: url(../../images/cake.png);
   }
-  .hero-content {
+  header .hero-content {
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -330,22 +339,23 @@ main {
     z-index: 2;
     flex-grow: 1;
   }
-  .hero-texts-content {
+  header .hero-texts-content {
     text-align: center;
   }
-  .hero-img-section {
+  header .hero-img-section {
     visibility: hidden;
   }
-  h2 {
+  header h2 {
     font-size: 32px;
   }
-  .hero-p {
+  header .hero-p {
     display: none;
   }
-  .hero-button {
+  header .hero-button {
     width: 100%;
   }
 }
+
 * {
   margin: 0;
   padding: 0;
@@ -435,40 +445,12 @@ main {
   color: #5E5B69;
 }
 
-.see-more-button {
-  text-align: center;
-  margin-block-start: 3rem;
-  margin-block-end: 5rem;
-  margin-inline: 0;
-  display: grid;
-  gap: var(--gutter);
-  grid-template-columns: repeat(var(--columns), 1fr);
-  grid-template-rows: auto;
-}
-
-.see-more-button a {
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  text-decoration: none;
-  color: #e3cdb1;
-  border: 2px;
-  border-color: #e3cdb1;
-  border-style: solid;
-  width: auto;
-  padding-block: 1rem;
-}
-
 .see-more-button-cards {
   text-align: center;
   margin-block-start: 3rem;
   margin-block-end: 5rem;
-  margin-inline: 0;
-  display: grid;
-  gap: var(--gutter);
-  grid-template-columns: repeat(var(--columns), 1fr);
 }
+
 .see-more-button-cards a {
   font-family: "Poppins";
   font-style: normal;
@@ -476,16 +458,11 @@ main {
   font-size: 16px;
   text-decoration: none;
   color: #e3cdb1;
+  padding-block: 1rem;
+  padding-inline: 5rem;
   border: 2px;
   border-color: #e3cdb1;
   border-style: solid;
-  width: auto;
-  padding-block: 1rem;
-}
-@media (max-width: 800px) {
-  .see-more-button-cards .see-more-button-cards-span {
-    grid-column: 3/span 7;
-  }
 }
 
 .kicker {
@@ -576,6 +553,7 @@ nav {
 
 .book-section {
   display: flex;
+  background-color: #f7f1eb;
   margin-block-end: 15rem;
   flex-direction: column;
   align-items: center;
@@ -587,7 +565,7 @@ nav {
 }
 
 @media (min-width: 800px) {
-  .book-section .see-more-button {
+  .book-section .see-more-button-cards {
     text-align: left;
   }
 }
@@ -598,9 +576,8 @@ h1 {
 }
 
 .content {
-  background-color: #f7f1eb;
-  width: 100%;
-  height: 500px;
+  width: 100vw;
+  height: 800px;
   align-items: center;
 }
 
