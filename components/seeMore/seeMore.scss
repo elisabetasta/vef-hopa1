@@ -22,3 +22,39 @@
   width: auto;
   padding-block: 1rem;
 }
+
+.see-more-button-cards {
+  text-align: center;
+  margin-block-start: 3rem;
+  margin-block-end: 5rem;
+  margin-inline: 0;
+  display: grid;
+  gap: var(--gutter);
+  grid-template-columns: repeat(var(--columns), 1fr);
+  // grid-template-rows: auto;
+  // justify-items: center;
+  // grid-column: 3 / span 4;
+
+  a {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    text-decoration: none;
+    color: #e3cdb1;
+    border: 2px;
+    border-color: #e3cdb1;
+    border-style: solid;
+    width: auto;
+    padding-block: 1rem;
+  }
+
+  @media (max-width: 800px) {
+    .see-more-button-cards-span {
+      grid-column: 3 / span 7;
+      // width: 10rem;
+    }
+  }
+
+
+}
