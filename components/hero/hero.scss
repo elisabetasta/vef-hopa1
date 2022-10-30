@@ -60,6 +60,7 @@ html {
 /* Almennt */
 
 nav {
+
   display: grid;
   background-color: var(--color-primary);
   order: 2;
@@ -68,6 +69,7 @@ nav {
   // width: 100%;
   grid-template-columns: repeat(var(--columns), 1fr);
 }
+
 
 nav a {
   text-decoration: none;
@@ -195,6 +197,24 @@ img {
 
 /* Info blokk */
 
+
+.wrapper {
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 100%;
+    margin: 0 auto;
+    // margin-left: auto;
+    gap: var(--gutter);
+    /* color: var(--color-primary); */
+}
+
+header {
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 100%;
+    gap: var(--gutter);
+    // background-color: blue;
+
 .info {
   display: flex;
   flex-direction: row;
@@ -216,6 +236,7 @@ main {
   margin-bottom: calc(var(--spacing) * 2);
   color: #5e5b69;
 }
+
 
 
 
