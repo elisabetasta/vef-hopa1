@@ -2,12 +2,12 @@
 
 * Elísa Björg Tryggvadóttir [ebt15@hi.is](mailto:ebt15@hi.is)
   * github: [`elisabjorg-13`](https://github.com/elisabjorg-13)
-* Elísabet Ásta Ólafsdóttir [eao13@hi.is](mailto:eao13@hi.is)
+* Elísabet Ásta Ólafsdóttir [eao14@hi.is](mailto:eao13@hi.is)
   * github: [`elisabetasta`](https://github.com/elisabetasta)
 * Friðrik Snær Björnsson [fsb3@hi.is](mailto:fsb3@hi.is)
   * github: [`fridrik-snaer`](https://github.com/fridrik-snaer)
 * Ívan Már Þrastarson [imt1@hi.is](mailto:imt1@hi.is)
-  * github: [`ivanmtra`](https://github.com/ivanmtra)
+  * github: [`ivamtra`](https://github.com/ivamtra)
 
 ## Scriptur og keyrsla á verkefni
 
