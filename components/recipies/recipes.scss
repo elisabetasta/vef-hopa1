@@ -39,6 +39,8 @@
 .ingredients-row {
   font-size: 2em;
   list-style-type: none;
+  display: flex;
+  flex-direction: row;
   .number {
     display: inline-block;
     margin-right: 0.2em;
@@ -64,6 +66,7 @@
 }
 .row2 {
   margin-top: 0.5rem;
+  margin-left: 0.5rem;
   display: flex;
   flex-direction: column;
   font-family: "Poppins";
