@@ -1,4 +1,4 @@
-.book-section {
+/* .book-section {
   display: flex;
 
   margin-block-end: 15rem;
@@ -31,17 +31,7 @@ h1 {
   align-items: center;
 }
 
-.image {
-  position: relative;
-  top: -100px;
-  justify-content: space-around;
-  @media (min-width: 800px) {
-    position: relative;
-    left: 10%;
-    top: 7%;
-  }
 
-}
 .book-heading {
   font-family: "Playfair Display";
   font-style: normal;
@@ -59,4 +49,100 @@ h1 {
   font-size: 18px;
   line-height: 32px;
   color: #5e5b69;
+}
+
+
+.book-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  height: 100vh;
+}
+
+
+.spacer {
+  height: 25%;
+}
+ */
+
+
+
+/*  Nýtt version
+ */
+
+ .book-wrapper {
+  display: flex;
+  justify-content: center;
+  background-color: #f7f1eb;
+  align-items: center;
+  padding-top: 10em;
+  height: 600px;
+  margin-bottom: 350px;
+
+  @media (max-width: 800px) {
+    display: flex;
+    flex-direction: row;
+    height: 800px;
+    padding-top: 30em;
+    margin-bottom: 500px;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+
+.book-section {
+  display: flex;
+  /* margin-bottom: 350px; */
+  align-items: flex-start;
+  justify-content: center;
+
+  @media (max-width: 800px) {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+
+.content {
+  width: 40%;
+}
+
+
+
+
+.book-heading {
+  font-family: "Playfair Display";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 80px;
+  color: #000000;
+  margin-block: 0;
+
+
+}
+ .book-section .see-more-button a {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  text-decoration: none;
+  color: #e3cdb1;
+  border: 2px;
+  border-color: #e3cdb1;
+  border-style: solid;
+  width: 100%;
+  padding: 15%;
+  padding-block: 1rem;
+}
+
+
+.book-section .see-more-button {
+  margin-top: 3em;
+
+  text-align: left;
+  display: block;
 }
