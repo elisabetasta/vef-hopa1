@@ -15,10 +15,6 @@
     width: calc(12 * var(--columns) + 11 * var(--gutter));
 }
 
-.recipe-site nav .links{
-    grid-column: 7 / span 3;
-}
-
 .recipe-site .recipie{
     @media (min-width: 1000px) {
         margin-block-start: 15rem;

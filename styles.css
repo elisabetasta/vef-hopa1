@@ -187,7 +187,9 @@ nav a {
   font-family: var(--font-family-base);
   color: #9b9b9b;
   font-weight: 400;
-  grid-column: 10/13;
+  grid-column: 7/span 5;
+  justify-content: end;
+  margin-inline-end: var(--offset);
 }
 
 h2 {
@@ -819,10 +821,6 @@ img:not(.hero-image) {
 
 .recipe-site nav {
   width: calc(12 * var(--columns) + 11 * var(--gutter));
-}
-
-.recipe-site nav .links {
-  grid-column: 7/span 3;
 }
 
 .recipe-site .recipie {
