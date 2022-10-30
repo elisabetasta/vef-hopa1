@@ -1,7 +1,5 @@
 @charset "UTF-8";
 :root {
-  --font-family-base: nunito, helvetica, arial, sans-serif;
-  --font-family-heading: domine, georgia, serif;
   --columns: 12;
   --gutter: 30px;
   --offset: 20px;
@@ -18,7 +16,7 @@ html {
   gap: var(--gutter);
   width: 100%;
 }
-@media (min-width: 800px) {
+@media (min-width: 1000px) {
   .cards {
     flex-direction: row;
   }
@@ -27,7 +25,7 @@ html {
 .card {
   width: 100%;
 }
-@media (min-width: 800px) {
+@media (min-width: 1000px) {
   .card {
     width: 33.3333333333%;
   }
@@ -69,9 +67,12 @@ html {
 }
 
 .card-info .card-link {
-  display: flex;
-  vertical-align: bottom;
-  width: 30%;
+  display: grid;
+  width: 50%;
+  position: relative;
+  bottom: 0;
+  right: 0;
+  text-align: right;
 }
 
 .card-info .card-link a {
@@ -83,6 +84,7 @@ html {
   font-size: 16px;
   text-align: right;
   width: 100%;
+  padding-block-start: 1.5rem;
 }
 
 .card .card-image img {
@@ -90,54 +92,6 @@ html {
   object-fit: cover;
   object-position: 50% 50%;
   width: 100%;
-}
-
-.newsletter-wrapper {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: #000000;
-  color: #FFF;
-  width: 100%;
-  height: 339px;
-}
-
-.newsletter-content {
-  display: flex;
-  width: 100%;
-  justify-content: space-around;
-}
-
-h3 {
-  font-size: 2em;
-}
-
-.subscribe-button {
-  background-color: #000000;
-  color: #E3CDB1;
-  border: 1px solid hsl(34deg, 47%, 79%);
-  height: 50px;
-  padding: 0 5em;
-}
-
-.email-form {
-  font-size: 1.25em;
-  margin-top: 0.5em;
-  color: white;
-  border: 0px solid black;
-  border-bottom: 1px solid white;
-  background-color: #000000;
-  padding: 1em;
-  text-align: left;
-  padding: 0 2em 0 0;
-}
-
-.email > .kicker {
-  color: #FFFFFF;
-}
-
-.kicker {
-  color: hsl(34deg, 47%, 79%);
 }
 
 /* Setjum inn „reset“ sem fjarlægir margin og padding af öllu */
@@ -185,7 +139,7 @@ html {
   --offset: 155px;
 }
 
-header {
+.wrapper header {
   background-color: var(--color-primary);
   height: 800px;
 }
@@ -206,7 +160,7 @@ nav a {
   font-style: normal;
   font-weight: 400;
   font-size: 15px;
-  color: #9B9B9B;
+  color: #9b9b9b;
 }
 
 .yum-yum {
@@ -868,13 +822,26 @@ img:not(.hero-image) {
   width: calc(100% - 2 * var(--offset));
 }
 
+.recipe-site nav {
+  width: calc(12 * var(--columns) + 11 * var(--gutter));
+}
+
+.recipe-site nav .links {
+  grid-column: 7/span 3;
+}
+
 .recipe-site .recipie {
-  margin-block-start: 15rem;
+  margin-block-start: 2rem;
   margin-inline: 0;
   display: grid;
   gap: var(--gutter);
   grid-template-columns: repeat(var(--columns), 1fr);
   grid-template-rows: auto;
+}
+@media (min-width: 1000px) {
+  .recipe-site .recipie {
+    margin-block-start: 15rem;
+  }
 }
 
 .recipe-site .recipie .ingredients {
@@ -884,6 +851,18 @@ img:not(.hero-image) {
   .recipe-site .recipie .ingredients {
     grid-column: 1/span 3;
   }
+}
+
+.recipe-site .ingredients .row1 p {
+  font-family: "Playfair Display";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 28px;
+  color: #E3CDB1;
+}
+
+.recipe-site .ingredients-list h2 {
+  margin-block-end: 3rem;
 }
 
 .recipe-site .recipie .method {
@@ -900,12 +879,20 @@ img:not(.hero-image) {
   font-size: 40px;
 }
 
+.recipe-site .recipie .method p {
+  margin-block-end: 2rem;
+}
+
+.recipe-site .recipie .method br {
+  display: block;
+  margin-bottom: 4em;
+}
+
 .recipe-site .recipe-header {
-  display: grid;
-  gap: var(--gutter);
-  grid-template-columns: repeat(var(--columns), 1fr);
-  grid-template-rows: auto;
+  display: flex;
+  flex-direction: row;
   background-image: url(../images/cake.png);
+  background-repeat: no-repeat;
 }
 @media (min-width: 1000px) {
   .recipe-site .recipe-header {
@@ -915,13 +902,20 @@ img:not(.hero-image) {
 
 .recipe-site .recipe-header-info {
   width: 100%;
-  grid-column: 1/span 12;
   display: flex;
   flex-direction: column;
 }
+.recipe-site .recipe-header-info .recipe-title h1 {
+  font-family: "Playfair Display";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  margin-bottom: 2rem;
+  text-align: center;
+}
 @media (min-width: 1000px) {
-  .recipe-site .recipe-header-info {
-    grid-column: 1/span 6;
+  .recipe-site .recipe-header-info .recipe-title h1 {
+    text-align: left;
   }
 }
 
@@ -931,6 +925,8 @@ img:not(.hero-image) {
 @media (min-width: 1000px) {
   .recipe-site .cake-img img {
     width: auto;
+    grid-column: 7/span 10;
+    overflow: visible;
   }
 }
 
@@ -957,6 +953,7 @@ img:not(.hero-image) {
 
 .recipe-site .recipes-wrapper {
   margin-inline: 0;
+  margin-block-start: 2rem;
 }
 
 .recipe-site br {
@@ -1002,6 +999,7 @@ img:not(.hero-image) {
 
 .recipe-site .newsletter-wrapper {
   width: 100vw;
+  margin-inline: calc(-1 * var(--offset));
 }
 @media (min-width: 1000px) {
   .recipe-site .newsletter-wrapper {
@@ -1010,6 +1008,7 @@ img:not(.hero-image) {
 }
 
 .recipe-site .newsletter-content {
+  margin-inline: calc(var(--offset));
   display: grid;
   gap: var(--gutter);
   grid-template-columns: repeat(var(--columns), 1fr);
@@ -1065,19 +1064,155 @@ img:not(.hero-image) {
   color: #FFFFFF;
 }
 
+.recipe-site .recipes-wrapper .recipe-list-head {
+  display: grid;
+  gap: var(--gutter);
+  grid-template-columns: repeat(var(--columns), 1fr);
+  grid-template-rows: auto;
+}
+
 .recipe-site .recipes-wrapper .head {
   font-family: "Playfair Display";
   font-style: normal;
   font-weight: 700;
-  font-size: 25px;
+  font-size: 18x;
   color: #D0D0D0;
   display: flex;
   flex-direction: row;
+  grid-column: 2/span 10;
+}
+@media (min-width: 1000px) {
+  .recipe-site .recipes-wrapper .head {
+    font-size: 25px;
+    grid-column: 1/span 10;
+  }
+}
+
+.recipe-site .recipes-wrapper .kicker {
+  grid-column: 2/span 10;
+}
+@media (min-width: 1000px) {
+  .recipe-site .recipes-wrapper .kicker {
+    grid-column: 1/span 10;
+  }
 }
 
 .recipe-site .recipes-wrapper .head .later-header {
   margin-inline-start: 1rem;
   color: #000000;
+}
+
+.newsletter-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #000000;
+  color: #fff;
+  width: 100%;
+  height: 339px;
+}
+
+.newsletter-content {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+}
+
+h3 {
+  font-size: 2em;
+}
+
+.subscribe-button {
+  background-color: #000000;
+  color: #e3cdb1;
+  border: 1px solid hsl(34deg, 47%, 79%);
+  height: 50px;
+  padding: 0 5em;
+}
+
+.email-form {
+  font-size: 1.25em;
+  margin-top: 0.5em;
+  color: white;
+  border: 0px solid black;
+  border-bottom: 1px solid white;
+  background-color: #000000;
+  padding: 1em;
+  text-align: left;
+  padding: 0 2em 0 0;
+}
+
+.subscribe-section {
+  font-family: "Playfair Display";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  color: #ffffff;
+}
+
+.email > .kicker {
+  color: #ffffff;
+}
+
+.kicker {
+  color: hsl(34deg, 47%, 79%);
+}
+
+.newsletter-wrapper {
+  width: 100vw;
+}
+@media (min-width: 1000px) {
+  .newsletter-wrapper {
+    margin-inline: calc(-1 * var(--site-margin) - var(--offset));
+  }
+}
+
+.newsletter-content {
+  display: grid;
+  gap: var(--gutter);
+  grid-template-columns: repeat(var(--columns), 1fr);
+  grid-template-rows: auto;
+  align-content: center;
+}
+@media (min-width: 1000px) {
+  .newsletter-content {
+    margin-inline: calc(1 * var(--site-margin) + var(--offset));
+  }
+}
+
+.subscribe-section {
+  grid-column: 2/span 10;
+  text-align: center;
+}
+@media (min-width: 1000px) {
+  .subscribe-section {
+    grid-column: 1/span 5;
+    text-align: left;
+  }
+}
+
+.email {
+  grid-column: 4/span 6;
+}
+@media (min-width: 1000px) {
+  .email {
+    grid-column: 6/span 3;
+  }
+}
+
+.subscribe-button {
+  grid-column: 4/span 6;
+  font-size: 16px;
+}
+@media (min-width: 1000px) {
+  .subscribe-button {
+    grid-column: 10/span 3;
+  }
+}
+
+.subscribe-button:hover {
+  background-color: #e3cdb1;
+  color: white;
 }
 
 /*# sourceMappingURL=styles.css.map */
