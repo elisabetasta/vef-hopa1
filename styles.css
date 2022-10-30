@@ -1274,6 +1274,12 @@ img:not(.hero-image) {
   margin-block-end: 30rem;
 }
 
+.index nav {
+  order: 0;
+  overflow: visible;
+  margin-inline-end: 0;
+}
+
 .newsletter-wrapper {
   display: flex;
   align-items: center;
