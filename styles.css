@@ -460,6 +460,26 @@ header .info-boxes {
   line-height: 2em;
 }
 
+.see-more-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1em;
+}
+.see-more-button a {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  text-decoration: none;
+  color: #e3cdb1;
+  padding-block: 1rem;
+  padding-inline: 5rem;
+  border: 2px;
+  border-color: #e3cdb1;
+  border-style: solid;
+}
+
 .latest-recipies-titlelist {
   display: flex;
   flex-direction: row;
@@ -686,7 +706,6 @@ body {
 }
 
 .recipes-wrapper {
-  margin-block-start: 30rem;
   margin-inline: 1rem;
 }
 @media (min-width: 800px) {
@@ -902,6 +921,7 @@ img:not(.hero-image) {
 }
 
 .play-button {
+  display: flex;
   border-width: 1px;
   border-style: solid;
   border-color: #ffffff;
@@ -911,6 +931,8 @@ img:not(.hero-image) {
   align-self: center;
   position: relative;
   left: 25%;
+  justify-content: center;
+  align-items: center;
 }
 
 .triangle {
@@ -922,8 +944,7 @@ img:not(.hero-image) {
   height: 0;
   width: 0;
   position: relative;
-  top: 40%;
-  left: 43%;
+  left: 5%;
 }
 
 .recipe-header-info {

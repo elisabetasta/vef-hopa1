@@ -75,7 +75,7 @@
     align-items: center;
   }
   .triangle {
-    --a: 5em;
+    --a: 2.5em;
     border-left: calc(0.866 * var(--a)) solid #ffffff;
     border-top: calc(var(--a) / 2) solid transparent;
     border-bottom: calc(var(--a) / 2) solid transparent;
@@ -83,6 +83,5 @@
     height: 0;
     width: 0;
     position: relative;
-    /* top: 29%; */
-    left: 10%;
+    left: 5%;
   }
