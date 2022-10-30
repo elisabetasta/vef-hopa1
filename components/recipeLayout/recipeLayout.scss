@@ -294,6 +294,10 @@
     flex-direction: column;
 }
 
-.index {
+.index header main{
+    width: 100vw;
     
+}
+.index header{
+    margin-block-end: 30rem;
 }

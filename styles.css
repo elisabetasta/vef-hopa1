@@ -1266,6 +1266,14 @@ img:not(.hero-image) {
   flex-direction: column;
 }
 
+.index header main {
+  width: 100vw;
+}
+
+.index header {
+  margin-block-end: 30rem;
+}
+
 .newsletter-wrapper {
   display: flex;
   align-items: center;
