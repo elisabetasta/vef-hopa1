@@ -383,7 +383,8 @@ header .info-boxes {
   font-family: "Playfair Display";
   font-style: normal;
   font-weight: 700;
-  font-size: 40px;
+  font-size: 2em;
+  margin-bottom: 1em;
   color: #D0D0D0;
 }
 
@@ -399,9 +400,21 @@ header .info-boxes {
 }
 
 .ingredients-row {
+  font-size: 2em;
+  list-style-type: none;
+}
+.ingredients-row .number {
+  display: inline-block;
+  margin-right: 0.2em;
+  color: #e3cdb1;
+}
+.ingredients-row .item {
+  font-size: 0.6em;
+  color: #D0D0D0;
+}
+.ingredients-row li {
   display: flex;
-  flex-direction: row;
-  gap: 1rem;
+  align-items: center;
 }
 
 .row1 {
@@ -433,16 +446,18 @@ header .info-boxes {
 .method h2 {
   font-family: playfair-display, serif;
   font-weight: 700;
-  size: 40px;
+  font-size: 2.5em;
   color: #d0d0d0;
 }
 
 .method p {
   font-family: "Poppins";
   font-style: normal;
+  margin-bottom: 2em;
   font-weight: 300;
   font-size: 18px;
   color: #5E5B69;
+  line-height: 2em;
 }
 
 .latest-recipies-titlelist {
@@ -919,6 +934,7 @@ img:not(.hero-image) {
 .recipe-icons {
   display: flex;
   flex-direction: row;
+  margin-bottom: 1em;
 }
 
 .recipe-icons .icon {
