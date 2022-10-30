@@ -471,7 +471,7 @@ main {
 }
 
 .latest-recipes .recipes-wrapper {
-  margin-block-start: 10rem;
+  margin-block-start: 5rem;
   margin-inline: 1rem;
 }
 @media (min-width: 800px) {
@@ -483,6 +483,83 @@ main {
 nav {
   position: fixed;
   top: 0;
+}
+
+.latest-recipes-main {
+  display: grid;
+  gap: var(--vertical-space);
+  grid-template-columns: 100%;
+  grid-template-rows: auto;
+  margin: var(--vertical-space) auto;
+  max-width: var(--max-width);
+  width: calc(100% - 2 * var(--offset));
+}
+
+.latest-recipe-site .newsletter-wrapper {
+  width: 100vw;
+  margin-inline: calc(-1 * var(--offset));
+}
+@media (min-width: 1000px) {
+  .latest-recipe-site .newsletter-wrapper {
+    margin-inline: calc(-1 * var(--site-margin) - var(--offset));
+  }
+}
+
+.latest-recipe-site .newsletter-content {
+  margin-inline: calc(var(--offset));
+  display: grid;
+  gap: var(--gutter);
+  grid-template-columns: repeat(var(--columns), 1fr);
+  grid-template-rows: auto;
+  align-content: center;
+}
+@media (min-width: 1000px) {
+  .latest-recipe-site .newsletter-content {
+    margin-inline: calc(1 * var(--site-margin) + var(--offset));
+  }
+}
+
+.latest-recipe-site .subscribe-section {
+  grid-column: 2/span 10;
+  text-align: center;
+}
+@media (min-width: 1000px) {
+  .latest-recipe-site .subscribe-section {
+    grid-column: 1/span 5;
+    text-align: left;
+  }
+}
+
+.latest-recipe-site .email {
+  grid-column: 4/span 6;
+}
+@media (min-width: 1000px) {
+  .latest-recipe-site .email {
+    grid-column: 6/span 3;
+  }
+}
+
+.latest-recipe-site .subscribe-button {
+  grid-column: 4/span 6;
+  font-size: 16px;
+}
+@media (min-width: 1000px) {
+  .latest-recipe-site .subscribe-button {
+    grid-column: 10/span 3;
+  }
+}
+
+.latest-recipe-site .subscribe-button:hover {
+  background-color: #e3cdb1;
+  color: white;
+}
+
+.latest-recipe-site .subscribe-section {
+  font-family: "Playfair Display";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  color: #ffffff;
 }
 
 .see-more-button {
@@ -610,7 +687,7 @@ footer hr {
 }
 
 .recipes-wrapper {
-  margin-block-start: 25rem;
+  margin-block-start: 10rem;
   margin-inline: 1rem;
 }
 @media (min-width: 800px) {
