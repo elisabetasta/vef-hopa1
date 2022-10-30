@@ -445,6 +445,10 @@ header .info-boxes {
   color: #5E5B69;
 }
 
+.grey-text {
+  color: #D0D0D0;
+}
+
 .latest-recipies-titlelist {
   display: flex;
   flex-direction: row;
@@ -1392,18 +1396,6 @@ h3 {
 .subscribe-button:hover {
   background-color: #e3cdb1;
   color: white;
-}
-
-.img-overlay-wrap {
-  position: relative;
-  display: inline-block; /* <= shrinks container to image size */
-  transition: transform 150ms ease-in-out;
-}
-
-.img-overlay-wrap svg {
-  position: absolute;
-  top: 0;
-  left: 0;
 }
 
 /*# sourceMappingURL=styles.css.map */
