@@ -185,7 +185,7 @@ html {
   --offset: 155px;
 }
 
-.wrapper header {
+header {
   background-color: var(--color-primary);
   height: 800px;
 }
@@ -250,7 +250,7 @@ p {
   color: var(--color-body);
 }
 
-.kicker {
+.hero-kicker {
   font-family: var(--font-family-base);
   font-size: var(--font-base-kicker);
   font-weight: 500;
@@ -261,12 +261,12 @@ img {
   filter: drop-shadow(0px 2px 74px rgba(0, 0, 0, 0.102893));
 }
 
-.img-section {
-  width: 50%;
-  height: 50%;
+.hero-img-section {
+  display: grid;
+  align-content: center;
 }
 
-.button {
+.hero-button {
   display: inline-block;
   /* font-family: var(--font-family-base); */
   text-decoration: none;
@@ -274,7 +274,7 @@ img {
   color: #e3cdb1;
   background-color: #fafafa;
   border: 1px solid #e3cdb1;
-  width: 50%;
+  width: 40%;
   padding: 0.5rem;
   /* stærð 2 dálkar + 2*gutter */
 }
@@ -285,15 +285,6 @@ img {
 }
 
 /* Layout */
-.wrapper {
-  display: grid;
-  grid-template-rows: auto;
-  grid-template-columns: 100%;
-  margin: 0 auto;
-  gap: var(--gutter);
-  /* color: var(--color-primary); */
-}
-
 header {
   display: grid;
   grid-template-rows: auto;
@@ -311,14 +302,18 @@ header {
   flex-direction: column;
   gap: var(--gutter);
   margin-top: 5rem;
+  height: 48%;
 }
 
 /* Info blokk */
 .info {
   display: flex;
   flex-direction: row;
-  gap: var(--gutter);
   grid-column: 1/span 12;
+}
+
+main {
+  height: 40%;
 }
 
 .info-left .content {
@@ -331,24 +326,72 @@ header {
   color: #5e5b69;
 }
 
-/* .info .kicker {
-    color: #e3cdb1;
-    /* font-size: var(--font-base-kicker);
-    /* font-family: var(--font-family-base);
-} */
 .hero-content {
-  width: 50%;
+  width: 48%;
+  display: grid;
+  align-content: center;
 }
 
 .info-boxes {
   display: grid;
-  grid-template-rows: repeat(2, 1fr);
-  grid-template-columns: repeat(var(--columns), 1fr);
   gap: calc(var(--gutter));
-  /* row-gap: var(--gutter); */
   row-gap: 0;
 }
 
+@media (max-width: 1200px) {
+  .info {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    background-image: url(../../images/cake.png);
+  }
+  .hero-img-section {
+    visibility: hidden;
+  }
+}
+@media (max-width: 800px) {
+  header {
+    height: auto;
+  }
+  .info-boxes {
+    display: flex;
+    flex-direction: column;
+    gap: var(--gutter);
+  }
+  .info {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    background-image: url(../../images/cake.png);
+  }
+  .hero-content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 25%;
+    z-index: 2;
+    flex-grow: 1;
+  }
+  .hero-texts-content {
+    text-align: center;
+  }
+  .hero-img-section {
+    visibility: hidden;
+  }
+  h2 {
+    font-size: 32px;
+  }
+  .hero-p {
+    display: none;
+  }
+  .hero-button {
+    width: 100%;
+  }
+}
 * {
   margin: 0;
   padding: 0;
@@ -463,6 +506,34 @@ header {
   padding-block: 1rem;
 }
 
+.see-more-button-cards {
+  text-align: center;
+  margin-block-start: 3rem;
+  margin-block-end: 5rem;
+  margin-inline: 0;
+  display: grid;
+  gap: var(--gutter);
+  grid-template-columns: repeat(var(--columns), 1fr);
+}
+.see-more-button-cards a {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  text-decoration: none;
+  color: #e3cdb1;
+  border: 2px;
+  border-color: #e3cdb1;
+  border-style: solid;
+  width: auto;
+  padding-block: 1rem;
+}
+@media (max-width: 800px) {
+  .see-more-button-cards .see-more-button-cards-span {
+    grid-column: 3/span 7;
+  }
+}
+
 .kicker {
   font-family: "Poppins";
   font-style: normal;
@@ -535,7 +606,7 @@ footer hr {
 }
 
 .recipes-wrapper {
-  margin-block-start: 16rem;
+  margin-block-start: 25rem;
   margin-inline: 1rem;
 }
 @media (min-width: 800px) {
@@ -616,7 +687,7 @@ h1 {
   color: #5e5b69;
 }
 
-img {
+img:not(.hero-image) {
   z-index: -2;
 }
 
