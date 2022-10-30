@@ -1,41 +1,27 @@
+.book-wrapper {
+  background-color: #f7f1eb;
+  padding: 5rem;
+  height: 350px;
+}
+
+
 .book-section {
   display: flex;
-  background-color: #f7f1eb;
-  padding: 10rem;
 }
 
-h1 {
-  font-size: xx-large;
+
+.content-text {
+  padding: 5rem 10rem 5rem 10rem;
+  align-items: center;
 }
 
-.content {
-  display: flex;
-  flex-direction: column;
-  width: 47%;
-}
 
-.image {
-  position: absolute;
-  left: 55%;
-  top: 7%;
-}
-
-.book-heading{
-  font-family: 'Playfair Display';
+.book-heading {
+  font-family: "Playfair Display";
   font-style: normal;
   font-weight: 700;
   font-size: 60px;
   line-height: 80px;
   color: #000000;
   margin-block: 0;
-}
-
-.book-text{
-  font-family: 'Poppins';
-font-style: normal;
-font-weight: 300;
-font-size: 18px;
-line-height: 32px;
-color: #5E5B69;
-
 }

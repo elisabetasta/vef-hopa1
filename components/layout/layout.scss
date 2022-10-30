@@ -1,3 +1,10 @@
+body {
+  display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 .recipes-wrapper {
   margin-block-start: 30rem;
   margin-inline: 1rem;
