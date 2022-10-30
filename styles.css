@@ -663,6 +663,13 @@ footer hr {
   margin-top: 1rem;
 }
 
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 .recipes-wrapper {
   margin-block-start: 30rem;
   margin-inline: 1rem;
@@ -673,13 +680,10 @@ footer hr {
   }
 }
 
-nav {
-  position: fixed;
-  top: 0;
-}
-
 /* .book-section {
   display: flex;
+  background-color: #f7f1eb;
+
   margin-block-end: 15rem;
   flex-direction: column;
   @media (min-width: 800px) {
@@ -687,9 +691,8 @@ nav {
   }
   align-items: center;
 }
-
-@media (min-width: 800px) {
-  .book-section .see-more-button-cards {
+.book-section .see-more-button-cards{
+  @media (min-width: 800px) {
     text-align: left;
   }
 }
@@ -700,6 +703,7 @@ h1 {
 }
 
 .content {
+  // background-color: #f7f1eb;
   width: 100vw;
   height: 800px;
   align-items: center;
