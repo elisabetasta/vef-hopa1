@@ -51,7 +51,7 @@ html {
 
 
 
-header {
+.wrapper header {
 
   background-color: var(--color-primary);
   height: 800px;
@@ -171,7 +171,7 @@ img {
 //   /* color: var(--color-primary); */
 // }
 
-header {
+.wrapper header {
   display: grid;
   grid-template-rows: auto;
   grid-template-columns: 100%;
@@ -257,7 +257,7 @@ main {
 
 @media (max-width: 800px) {
 
-  header {
+  .wrapper header {
     height: auto;
   }
 
