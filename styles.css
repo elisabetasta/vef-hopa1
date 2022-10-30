@@ -445,40 +445,12 @@ header .info-boxes {
   color: #5E5B69;
 }
 
-.see-more-button {
-  text-align: center;
-  margin-block-start: 3rem;
-  margin-block-end: 5rem;
-  margin-inline: 0;
-  display: grid;
-  gap: var(--gutter);
-  grid-template-columns: repeat(var(--columns), 1fr);
-  grid-template-rows: auto;
-}
-
-.see-more-button a {
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  text-decoration: none;
-  color: #e3cdb1;
-  border: 2px;
-  border-color: #e3cdb1;
-  border-style: solid;
-  width: auto;
-  padding-block: 1rem;
-}
-
 .see-more-button-cards {
   text-align: center;
   margin-block-start: 3rem;
   margin-block-end: 5rem;
-  margin-inline: 0;
-  display: grid;
-  gap: var(--gutter);
-  grid-template-columns: repeat(var(--columns), 1fr);
 }
+
 .see-more-button-cards a {
   font-family: "Poppins";
   font-style: normal;
@@ -486,16 +458,11 @@ header .info-boxes {
   font-size: 16px;
   text-decoration: none;
   color: #e3cdb1;
+  padding-block: 1rem;
+  padding-inline: 5rem;
   border: 2px;
   border-color: #e3cdb1;
   border-style: solid;
-  width: auto;
-  padding-block: 1rem;
-}
-@media (max-width: 800px) {
-  .see-more-button-cards .see-more-button-cards-span {
-    grid-column: 3/span 7;
-  }
 }
 
 .kicker {
@@ -586,6 +553,7 @@ nav {
 
 .book-section {
   display: flex;
+  background-color: #f7f1eb;
   margin-block-end: 15rem;
   flex-direction: column;
   align-items: center;
@@ -597,7 +565,7 @@ nav {
 }
 
 @media (min-width: 800px) {
-  .book-section .see-more-button {
+  .book-section .see-more-button-cards {
     text-align: left;
   }
 }
@@ -608,9 +576,8 @@ h1 {
 }
 
 .content {
-  background-color: #f7f1eb;
-  width: 100%;
-  height: 500px;
+  width: 100vw;
+  height: 800px;
   align-items: center;
 }
 
