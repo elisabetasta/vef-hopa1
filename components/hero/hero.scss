@@ -50,7 +50,9 @@ html {
 }
 
 
+
 header {
+
   background-color: var(--color-primary);
   height: 800px;
 }
@@ -67,13 +69,13 @@ nav {
   grid-template-columns: repeat(var(--columns), 1fr);
 }
 
-nav a{
-    text-decoration: none;
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 15px;
-    color: #9B9B9B;
+nav a {
+  text-decoration: none;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  color: #9b9b9b;
 }
 
 
