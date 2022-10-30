@@ -9,7 +9,10 @@
     "copy:html": "cpy ./*.html ./build/",
     "copy:js": "cpy ./*.css ./build/",
     "build": "concurrently npm:copy:*",
-    "lint": "stylelint styles.scss ./**/*.scss"
+    "sass-watch": "sass --watch *.scss styles.css",
+    "browser-sync": "browser-sync start --server --files index.html styles.css",
+    "lint": "stylelint styles.scss ./**/*.scss",
+    "dev": "concurrently npm:sass-watch npm:browser-sync"
   },
   "repository": {
     "type": "git",
