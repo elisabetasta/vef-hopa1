@@ -1,0 +1,85 @@
+.video-header-info {
+  width: 31%;
+  margin-top: 9rem;
+  margin-left: 10rem;
+}
+.recipe-icons {
+  display: flex;
+  flex-direction: row;
+}
+.recipe-icons .icon {
+  display: flex;
+  flex-direction: row;
+}
+.recipe-icons p {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  color: #ffffff;
+  align-self: center;
+  margin-inline-start: 1rem;
+  margin-inline-end: 3rem;
+}
+.recipe-icons svg{
+   align-self: center;
+}
+.video-header {
+  display: flex;
+  flex-direction: row;
+  height: 40rem;
+  background-color: #000000;
+  background-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 1),
+      rgba(0, 0, 0, 0.97),
+      rgba(0, 0, 0, 0)
+    ),
+    url("../../images/Bitmap-10.png");
+
+  background-repeat: no-repeat;
+  background-position: 100%;
+  background-size: contain;
+}
+.video-header-text {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  color: #9b9b9b;
+}
+.video-title {
+  font-family: "Playfair Display";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  color: #ffffff;
+}
+
+.video-title h1{
+    margin: 0 auto;
+}
+
+.play-button {
+  border-width: 1px;
+  border-style: solid;
+  border-color: #ffffff;
+  border-radius: 100%;
+  width: 10rem;
+  height: 10rem;
+  align-self: center;
+  position: relative;
+  left: 25%;
+}
+.triangle {
+    --a: 2.5em;
+    border-left: calc(0.866 * var(--a)) solid #ffffff;
+    border-top: calc(var(--a) / 2) solid transparent;
+    border-bottom: calc(var(--a) / 2) solid transparent;
+    border-right: 0;
+    height: 0;
+    width: 0;
+    position: relative;
+    top: 40%;
+    left: 43%;
+}

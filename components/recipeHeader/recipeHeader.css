@@ -1,0 +1,65 @@
+.recipe-header-info {
+  width: 31%;
+  margin-top: 9rem;
+  margin-left: 10rem;
+}
+.recipe-icons {
+  display: flex;
+  flex-direction: row;
+}
+.recipe-icons .icon {
+  display: flex;
+  flex-direction: row;
+}
+.recipe-icons p {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  color: #000000;
+  align-self: center;
+  margin-inline-start: 1rem;
+  margin-inline-end: 3rem;
+}
+.recipe-icons svg {
+  align-self: center;
+}
+.recipe-header {
+  display: flex;
+  flex-direction: row;
+  height: 40rem;
+}
+.recipe-header-text {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  color: #5e5b69;
+}
+.recipe-title {
+  font-family: "Playfair Display";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 60px;
+  color: #000000;
+}
+
+.recipe-title h1 {
+  margin: 0 auto;
+}
+.icon-desc {
+  display: flex;
+  flex-direction: row;
+}
+.icon-desc p {
+  margin-inline-start: 0.5rem;
+  color: #5e5b69;
+}
+.icon-desc .icon-bold {
+  margin-inline-start: 1rem;
+  margin-inline-end: 0;
+  color: #000000;
+}
+.cake-img {
+    filter: drop-shadow(0px 2px 74px rgba(0, 0, 0, 0.102893));
+}

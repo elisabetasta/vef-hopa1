@@ -1,52 +1,96 @@
 .newsletter-wrapper {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: #000000;
-    color: #FFF;
-    width: 100%;
-    height: 339px;
-  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #000000;
+  color: #fff;
+  width: 100%;
+  height: 339px;
+}
+
+.newsletter-content {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+}
+
+h3 {
+  font-size: 2em;
+}
+
+.subscribe-button {
+  background-color: #000000;
+  color: #e3cdb1;
+  border: 1px solid hsl(34, 47%, 79%);
+  height: 50px;
+  padding: 0 5em;
+}
+
+.email-form {
+  font-size: 1.25em;
+  margin-top: 0.5em;
+  color: white;
+  border: 0px solid black;
+  border-bottom: 1px solid white;
+  background-color: #000000;
+  padding: 1em;
+  text-align: left;
+  padding: 0 2em 0 0;
+}
+.subscribe-section {
+  font-family: "Playfair Display";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  color: #ffffff;
+}
+
+.email > .kicker {
+  color: #ffffff;
+}
+
+.kicker {
+  color: hsl(34, 47%, 79%);
+}
+
+.newsletter-wrapper {
+  @media (min-width: 1000px) {
+    margin-inline: calc(-1 * var(--site-margin) - var(--offset));
   }
-  
-  .newsletter-content {
-    display: flex;
-    width: 100%;
-    justify-content: space-around;
+  width: 100vw;
+}
+.newsletter-content {
+  @media (min-width: 1000px) {
+    margin-inline: calc(1 * var(--site-margin) + var(--offset));
   }
-  
-  h3 {
-    font-size: 2em;
-  }
-  
-  
-  .subscribe-button {
-    background-color: #000000;
-    color: #E3CDB1;
-    border: 1px solid hsl(34, 47%, 79%);
-    height: 50px;
-    padding: 0 5em;
-  }
-  
-  
-  .email-form {
-    font-size: 1.25em;
-    margin-top: 0.5em;
-    color: white;
-    border: 0px solid black;
-    border-bottom: 1px solid white;
-    background-color: #000000;
-    padding: 1em;
+  display: grid;
+  gap: var(--gutter);
+  grid-template-columns: repeat(var(--columns), 1fr);
+  grid-template-rows: auto;
+  align-content: center;
+}
+.subscribe-section {
+  @media (min-width: 1000px) {
+    grid-column: 1 / span 5;
     text-align: left;
-    padding: 0 2em 0 0;
-  
   }
-  
-  .email > .kicker {
-    color: #FFFFFF
+  grid-column: 2 / span 10;
+  text-align: center;
+}
+.email {
+  @media (min-width: 1000px) {
+    grid-column: 6 / span 3;
   }
-  
-  .kicker {
-    color: hsl(34, 47%, 79%)
+  grid-column: 4 / span 6;
+}
+.subscribe-button {
+  @media (min-width: 1000px) {
+    grid-column: 10 / span 3;
   }
-  
+  grid-column: 4 / span 6;
+  font-size: 16px;
+}
+.subscribe-button:hover {
+  background-color: #e3cdb1;
+  color: white;
+}
