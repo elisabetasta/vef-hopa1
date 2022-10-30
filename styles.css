@@ -462,6 +462,10 @@ header .info-boxes {
   line-height: 2em;
 }
 
+.grey-text {
+  color: #D0D0D0;
+}
+
 .see-more-button {
   display: flex;
   justify-content: center;

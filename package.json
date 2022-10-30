@@ -6,23 +6,13 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "sass": "sass styles.scss styles.css",
-    "sass-cards": "sass components/card/card.scss components/card/card.css",
-    "browser-sync": "browser-sync start --server --files index.html styles.css",
-    "sass-watch": "sass --watch *.scss styles.css",
-    "dev": "concurrently npm:sass-watch npm:browser-sync",
     "copy:html": "cpy ./*.html ./build/",
     "copy:js": "cpy ./*.css ./build/",
     "build": "concurrently npm:copy:*",
-    "lint": "stylelint styles.scss ./**/*.scss",
-    "lint-css": "stylelint styles.css ./*/.css"
+    "lint": "stylelint styles.scss ./**/*.scss"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/elisabetasta/vef-hopa1.git"
-  },
-  "author": "Ívan Már Þrastarson, Elísa Björg Tryggvadóttir, Elísabet Ásta Ólafsdóttir, Friðrik Snær Björnsson",
-  "license": "ISC",
-  "bugs": {
     "url": "https://github.com/elisabetasta/vef-hopa1/issues"
   },
   "homepage": "https://github.com/elisabetasta/vef-hopa1#readme",
