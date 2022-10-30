@@ -16,3 +16,20 @@
   border-color: #e3cdb1;
   border-style: solid;
 }
+.recipe-site .see-more-button{
+  display: grid;
+  gap: var(--gutter);
+  grid-template-columns: repeat(var(--columns), 1fr);
+  grid-template-rows: auto;
+}
+
+.recipe-site .see-more-button-cards a {
+  padding-inline: 0;
+}
+
+.recipe-site .see-more-button .line{
+  width: 100%;
+  height: 2px;
+  background-color: #E7E7E7;
+  align-self: center;
+}

@@ -16,7 +16,7 @@ html {
   gap: var(--gutter);
   width: 100%;
 }
-@media (min-width: 800px) {
+@media (min-width: 1000px) {
   .cards {
     flex-direction: row;
   }
@@ -25,7 +25,7 @@ html {
 .card {
   width: 100%;
 }
-@media (min-width: 800px) {
+@media (min-width: 1000px) {
   .card {
     width: 33.3333333333%;
   }
@@ -187,7 +187,9 @@ nav a {
   font-family: var(--font-family-base);
   color: #9b9b9b;
   font-weight: 400;
-  grid-column: 10/13;
+  grid-column: 7/span 5;
+  justify-content: end;
+  margin-inline-end: var(--offset);
 }
 
 h2 {
@@ -627,6 +629,24 @@ nav {
   border-style: solid;
 }
 
+.recipe-site .see-more-button {
+  display: grid;
+  gap: var(--gutter);
+  grid-template-columns: repeat(var(--columns), 1fr);
+  grid-template-rows: auto;
+}
+
+.recipe-site .see-more-button-cards a {
+  padding-inline: 0;
+}
+
+.recipe-site .see-more-button .line {
+  width: 100%;
+  height: 2px;
+  background-color: #E7E7E7;
+  align-self: center;
+}
+
 .kicker {
   font-family: "Poppins";
   font-style: normal;
@@ -1042,10 +1062,6 @@ img:not(.hero-image) {
   width: calc(12 * var(--columns) + 11 * var(--gutter));
 }
 
-.recipe-site nav .links {
-  grid-column: 7/span 3;
-}
-
 .recipe-site .recipie {
   margin-block-start: 2rem;
   margin-inline: 0;
@@ -1175,13 +1191,6 @@ img:not(.hero-image) {
 .recipe-site br {
   display: block;
   margin: 40px 0;
-}
-
-.recipe-site .see-more-button .line {
-  width: 100%;
-  height: 2px;
-  background-color: #E7E7E7;
-  align-self: center;
 }
 
 .recipe-site .see-more-button .left-line {
@@ -1316,6 +1325,57 @@ img:not(.hero-image) {
 .recipe-site .recipes-wrapper .head .later-header {
   margin-inline-start: 1rem;
   color: #000000;
+}
+
+.latest body {
+  margin-inline: var(--offset);
+}
+
+.latest .recipes-wrapper {
+  margin-block-start: 5rem;
+}
+
+.latest .recipe-list-head .head {
+  color: #000000;
+}
+
+.latest .recipes-wrapper .recipe-list-head {
+  margin-block-end: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+@media (min-width: 1000px) {
+  .latest .recipes-wrapper .recipe-list-head {
+    flex-direction: row;
+  }
+}
+
+.latest .recipe-list-head-info {
+  width: 50%;
+}
+
+.latest .recipe-list-head-cb {
+  font-family: "Playfair Display";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 22px;
+  color: #000000;
+  display: flex;
+  width: 50%;
+  margin-block-end: 0.5rem;
+  position: relative;
+  right: 0;
+}
+@media (min-width: 1000px) {
+  .latest .recipe-list-head-cb {
+    display: flex;
+    align-self: flex-end;
+    justify-content: end;
+  }
+}
+
+.latest .recipe-list-head-cb .cb {
+  border: 3px;
 }
 
 .newsletter-wrapper {

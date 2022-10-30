@@ -107,7 +107,9 @@ nav a {
   font-family: var(--font-family-base);
   color: #9b9b9b;
   font-weight: 400;
-  grid-column: 10 / 13;
+  grid-column: 7 / span 5;
+  justify-content: end;
+  margin-inline-end: var(--offset);
 }
 
 h2 {
