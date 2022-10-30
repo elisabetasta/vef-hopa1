@@ -1,7 +1,5 @@
 @charset "UTF-8";
 :root {
-  --font-family-base: nunito, helvetica, arial, sans-serif;
-  --font-family-heading: domine, georgia, serif;
   --columns: 12;
   --gutter: 30px;
   --offset: 20px;
@@ -69,9 +67,12 @@ html {
 }
 
 .card-info .card-link {
-  display: flex;
-  vertical-align: bottom;
-  width: 30%;
+  display: grid;
+  width: 50%;
+  position: relative;
+  bottom: 0;
+  right: 0;
+  text-align: right;
 }
 
 .card-info .card-link a {
@@ -83,6 +84,7 @@ html {
   font-size: 16px;
   text-align: right;
   width: 100%;
+  padding-block-start: 1.5rem;
 }
 
 .card .card-image img {
@@ -258,40 +260,49 @@ img {
 }
 
 /* Info blokk */
-.info {
+.wrapper {
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: 100%;
+  margin: 0 auto;
+  gap: var(--gutter);
+  /* color: var(--color-primary); */
+}
+
+header {
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: 100%;
+  gap: var(--gutter);
+}
+header .info {
   display: flex;
   flex-direction: row;
   grid-column: 1/span 12;
 }
-
-main {
+header main {
   height: 40%;
 }
-
-.info-left .content {
+header .info-left .content {
   /* order: -1; */
   flex: 1;
 }
-
-.info .content p {
+header .info .content p {
   margin-bottom: calc(var(--spacing) * 2);
   color: #5e5b69;
 }
-
-.hero-content {
+header .hero-content {
   width: 48%;
   display: grid;
   align-content: center;
 }
-
-.info-boxes {
+header .info-boxes {
   display: grid;
   gap: calc(var(--gutter));
   row-gap: 0;
 }
-
 @media (max-width: 1200px) {
-  .info {
+  header .info {
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -299,20 +310,20 @@ main {
     background-size: cover;
     background-image: url(../../images/cake.png);
   }
-  .hero-img-section {
+  header .hero-img-section {
     visibility: hidden;
   }
 }
 @media (max-width: 800px) {
-  .wrapper header {
+  header .wrapper header {
     height: auto;
   }
-  .info-boxes {
+  header .info-boxes {
     display: flex;
     flex-direction: column;
     gap: var(--gutter);
   }
-  .info {
+  header .info {
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -320,7 +331,7 @@ main {
     background-size: cover;
     background-image: url(../../images/cake.png);
   }
-  .hero-content {
+  header .hero-content {
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -328,22 +339,23 @@ main {
     z-index: 2;
     flex-grow: 1;
   }
-  .hero-texts-content {
+  header .hero-texts-content {
     text-align: center;
   }
-  .hero-img-section {
+  header .hero-img-section {
     visibility: hidden;
   }
-  h2 {
+  header h2 {
     font-size: 32px;
   }
-  .hero-p {
+  header .hero-p {
     display: none;
   }
-  .hero-button {
+  header .hero-button {
     width: 100%;
   }
 }
+
 * {
   margin: 0;
   padding: 0;
@@ -820,13 +832,26 @@ img:not(.hero-image) {
   width: calc(100% - 2 * var(--offset));
 }
 
+.recipe-site nav {
+  width: calc(12 * var(--columns) + 11 * var(--gutter));
+}
+
+.recipe-site nav .links {
+  grid-column: 7/span 3;
+}
+
 .recipe-site .recipie {
-  margin-block-start: 15rem;
+  margin-block-start: 2rem;
   margin-inline: 0;
   display: grid;
   gap: var(--gutter);
   grid-template-columns: repeat(var(--columns), 1fr);
   grid-template-rows: auto;
+}
+@media (min-width: 1000px) {
+  .recipe-site .recipie {
+    margin-block-start: 15rem;
+  }
 }
 
 .recipe-site .recipie .ingredients {
@@ -836,6 +861,18 @@ img:not(.hero-image) {
   .recipe-site .recipie .ingredients {
     grid-column: 1/span 3;
   }
+}
+
+.recipe-site .ingredients .row1 p {
+  font-family: "Playfair Display";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 28px;
+  color: #E3CDB1;
+}
+
+.recipe-site .ingredients-list h2 {
+  margin-block-end: 3rem;
 }
 
 .recipe-site .recipie .method {
@@ -852,12 +889,20 @@ img:not(.hero-image) {
   font-size: 40px;
 }
 
+.recipe-site .recipie .method p {
+  margin-block-end: 2rem;
+}
+
+.recipe-site .recipie .method br {
+  display: block;
+  margin-bottom: 4em;
+}
+
 .recipe-site .recipe-header {
-  display: grid;
-  gap: var(--gutter);
-  grid-template-columns: repeat(var(--columns), 1fr);
-  grid-template-rows: auto;
+  display: flex;
+  flex-direction: row;
   background-image: url(../images/cake.png);
+  background-repeat: no-repeat;
 }
 @media (min-width: 1000px) {
   .recipe-site .recipe-header {
@@ -867,13 +912,20 @@ img:not(.hero-image) {
 
 .recipe-site .recipe-header-info {
   width: 100%;
-  grid-column: 1/span 12;
   display: flex;
   flex-direction: column;
 }
+.recipe-site .recipe-header-info .recipe-title h1 {
+  font-family: "Playfair Display";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  margin-bottom: 2rem;
+  text-align: center;
+}
 @media (min-width: 1000px) {
-  .recipe-site .recipe-header-info {
-    grid-column: 1/span 6;
+  .recipe-site .recipe-header-info .recipe-title h1 {
+    text-align: left;
   }
 }
 
@@ -883,6 +935,8 @@ img:not(.hero-image) {
 @media (min-width: 1000px) {
   .recipe-site .cake-img img {
     width: auto;
+    grid-column: 7/span 10;
+    overflow: visible;
   }
 }
 
@@ -909,6 +963,7 @@ img:not(.hero-image) {
 
 .recipe-site .recipes-wrapper {
   margin-inline: 0;
+  margin-block-start: 2rem;
 }
 
 .recipe-site br {
@@ -954,6 +1009,7 @@ img:not(.hero-image) {
 
 .recipe-site .newsletter-wrapper {
   width: 100vw;
+  margin-inline: calc(-1 * var(--offset));
 }
 @media (min-width: 1000px) {
   .recipe-site .newsletter-wrapper {
@@ -962,6 +1018,7 @@ img:not(.hero-image) {
 }
 
 .recipe-site .newsletter-content {
+  margin-inline: calc(var(--offset));
   display: grid;
   gap: var(--gutter);
   grid-template-columns: repeat(var(--columns), 1fr);
@@ -1017,14 +1074,37 @@ img:not(.hero-image) {
   color: #FFFFFF;
 }
 
+.recipe-site .recipes-wrapper .recipe-list-head {
+  display: grid;
+  gap: var(--gutter);
+  grid-template-columns: repeat(var(--columns), 1fr);
+  grid-template-rows: auto;
+}
+
 .recipe-site .recipes-wrapper .head {
   font-family: "Playfair Display";
   font-style: normal;
   font-weight: 700;
-  font-size: 25px;
+  font-size: 18x;
   color: #D0D0D0;
   display: flex;
   flex-direction: row;
+  grid-column: 2/span 10;
+}
+@media (min-width: 1000px) {
+  .recipe-site .recipes-wrapper .head {
+    font-size: 25px;
+    grid-column: 1/span 10;
+  }
+}
+
+.recipe-site .recipes-wrapper .kicker {
+  grid-column: 2/span 10;
+}
+@media (min-width: 1000px) {
+  .recipe-site .recipes-wrapper .kicker {
+    grid-column: 1/span 10;
+  }
 }
 
 .recipe-site .recipes-wrapper .head .later-header {
