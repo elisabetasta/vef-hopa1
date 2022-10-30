@@ -1,28 +1,32 @@
-"name": "vef-hopa1",
-   "version": "1.0.0",
-   "description": "Hópaverkefni 1 í Vefforritun 1 2022",
-   "main": "index.html",
-   "scripts": {
-     "test": "echo \"Error: no test specified\" && exit 1",
-     "sass": "sass styles.scss styles.css",
- @@ -13,7 +13,9 @@
-     "copy:html": "cpy ./*.html ./build/",
-     "copy:js": "cpy ./*.css ./build/",
-     "build": "concurrently npm:copy:*",
-     "lint": "stylelint styles.scss ./**/*.scss"
-   },
-   "repository": {
-     "type": "git",
- @@ -25,14 +27,18 @@
-     "url": "https://github.com/elisabetasta/vef-hopa1/issues"
-   },
-   "homepage": "https://github.com/elisabetasta/vef-hopa1#readme",
-   "devDependencies": {
-     "browser-sync": "^2.27.10",
-     "concurrently": "^7.5.0",
-     "cpy-cli": "^4.2.0",
-     "lint": "^1.1.2",
-     "sass": "^1.55.0",
-     "stylelint": "^14.14.0",
-     "stylelint-config-sass-guidelines": "^9.0.1",
-     "stylelint-config-standard": "^28.0.0"
+{
+  "name": "vef-hopa1",
+  "version": "1.0.0",
+  "description": "Hópaverkefni 1 í Vefforritun 1 2022",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "sass styles.scss styles.css",
+    "copy:html": "cpy ./*.html ./build/",
+    "copy:js": "cpy ./*.css ./build/",
+    "build": "concurrently npm:copy:*",
+    "sass-watch": "sass --watch *.scss styles.css",
+    "browser-sync": "browser-sync start --server --files index.html styles.css",
+    "lint": "stylelint styles.scss ./**/*.scss",
+    "dev": "concurrently npm:sass-watch npm:browser-sync"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/elisabetasta/vef-hopa1/issues"
+  },
+  "homepage": "https://github.com/elisabetasta/vef-hopa1#readme",
+  "devDependencies": {
+    "browser-sync": "^2.27.10",
+    "concurrently": "^7.5.0",
+    "cpy-cli": "^4.2.0",
+    "lint": "^1.1.2",
+    "sass": "^1.55.0",
+    "stylelint": "^14.14.0",
+    "stylelint-config-sass-guidelines": "^9.0.1",
+    "stylelint-config-standard": "^28.0.0"
+  }
+}
