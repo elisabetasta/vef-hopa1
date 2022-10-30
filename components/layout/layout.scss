@@ -1,12 +1,16 @@
+body {
+  display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 .recipes-wrapper {
-    margin-block-start: 25rem;
-    margin-inline: 1rem;
-    
-    @media (min-width: 800px) {
-        margin-inline: 6rem;
-      }
+  margin-inline: 1rem;
+
+  @media (min-width: 800px) {
+    margin-inline: 6rem;
+  }
 }
-nav{
-    position: fixed;
-    top: 0;
-}
+
+

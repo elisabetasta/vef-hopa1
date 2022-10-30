@@ -36,7 +36,7 @@
         rgba(0, 0, 0, 0)
       ),
       url("../../images/Bitmap-10.png");
-  
+
     background-repeat: no-repeat;
     background-position: 100%;
     background-size: contain;
@@ -55,12 +55,13 @@
     font-size: 40px;
     color: #ffffff;
   }
-  
+
   .video-title h1{
       margin: 0 auto;
   }
-  
+
   .play-button {
+    display: flex;
     border-width: 1px;
     border-style: solid;
     border-color: #ffffff;
@@ -70,17 +71,17 @@
     align-self: center;
     position: relative;
     left: 25%;
+    justify-content: center;
+    align-items: center;
   }
   .triangle {
-      --a: 2.5em;
-      border-left: calc(0.866 * var(--a)) solid #ffffff;
-      border-top: calc(var(--a) / 2) solid transparent;
-      border-bottom: calc(var(--a) / 2) solid transparent;
-      border-right: 0;
-      height: 0;
-      width: 0;
-      position: relative;
-      top: 40%;
-      left: 43%;
+    --a: 2.5em;
+    border-left: calc(0.866 * var(--a)) solid #ffffff;
+    border-top: calc(var(--a) / 2) solid transparent;
+    border-bottom: calc(var(--a) / 2) solid transparent;
+    border-right: 0;
+    height: 0;
+    width: 0;
+    position: relative;
+    left: 5%;
   }
-  
