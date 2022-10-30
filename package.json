@@ -2,7 +2,7 @@
   "name": "vef-hopa1",
   "version": "1.0.0",
   "description": "Hópaverkefni 1 í Vefforritun 1 2022",
-  "main": "index.html",
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "sass": "sass styles.scss styles.css",
@@ -12,8 +12,7 @@
     "dev": "concurrently npm:sass-watch npm:browser-sync",
     "copy:html": "cpy ./*.html ./build/",
     "copy:js": "cpy ./*.css ./build/",
-    "build": "concurrently npm:copy:*",
-    "lint": "stylelint styles.scss ./**/*.scss"
+    "build": "concurrently npm:copy:*"
   },
   "repository": {
     "type": "git",
@@ -25,14 +24,10 @@
     "url": "https://github.com/elisabetasta/vef-hopa1/issues"
   },
   "homepage": "https://github.com/elisabetasta/vef-hopa1#readme",
-  "devDependencies": {
+  "dependencies": {
     "browser-sync": "^2.27.10",
     "concurrently": "^7.5.0",
     "cpy-cli": "^4.2.0",
-    "lint": "^1.1.2",
-    "sass": "^1.55.0",
-    "stylelint": "^14.14.0",
-    "stylelint-config-sass-guidelines": "^9.0.1",
-    "stylelint-config-standard": "^28.0.0"
+    "sass": "^1.55.0"
   }
 }
