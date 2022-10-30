@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="latest-recipe-site" lang="is">
+<html class="recipe-site latest" lang="is">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -82,24 +82,24 @@
         <!--This comes from the hero component-->
       </header>
     </section>
-    <section class="latest-recipes-main">
-      <div class="recipes-wrapper">
-        <div class="recipe-list-head">
-          <div class="kicker">
-            <p>Get ready to get busy</p>
-          </div>
-          <div class="latest-recipies-titlelist">
-            <div class="latest-recipies-head">
-              <h3>All recipes</h3>
-            </div>
-            <div class="latest-recipies-checkbox">
-              <input type="checkbox" />
-              <p>Only show video recipes</p>
-            </div>
-            <!--TODO bæta við þessu "Only show video recipes"-->
-          </div>
+      <!--This comes from the hero component-->
+    <div class="recipes-wrapper">
+      <div class="recipe-list-head">
+        <div class="recipe-list-head-info">
+        <div class="kicker">
+          <p>Get ready to get busy</p>
         </div>
-
+        <div class="head">
+          <h3>All recipes</h3>
+        </div>
+        </div>
+        <div class="recipe-list-head-cb">
+          <label >
+            <input class="cb" type="checkbox" name="check"/>
+            Only show video recipes
+          </label>
+        </div>
+      </div>
         <!-- This comes fram the card component -->
         <div class="latest-recipies-cards">
           <div class="cards">
@@ -474,28 +474,32 @@
           </div>
         </div>
         <!-- This comes fram the card component -->
+      <!-- This comes fram the card component -->
+      <div class="see-more-button see-more-button-cards">
+        <div class="left-line line"></div>
+        <a href="../index.html" class="button">See more</a>
+        <div class="right-line line"></div>
       </div>
-
-      <!--This comes from the newsletter component-->
-      <div class="newsletter-wrapper">
-        <div class="newsletter-content">
-          <div class="subscribe-section">
-            <div class="kicker">Craving more?</div>
-            <h3>Subscribe to our newsletter</h3>
-          </div>
-          <div class="email">
-            <div class="kicker">Email</div>
-            <input
-              class="email-form"
-              type="text"
-              name="text"
-              placeholder="Enter your mail here"
-            />
-          </div>
-          <button class="subscribe-button">Subscribe now</button>
+    </div>
+    <!--This comes from the newsletter component-->
+    <div class="newsletter-wrapper">
+      <div class="newsletter-content">
+        <div class="subscribe-section">
+          <div class="kicker">Craving more?</div>
+          <h3>Subscribe to our newsletter</h3>
         </div>
+        <div class="email">
+          <div class="kicker">Email</div>
+          <input
+            class="email-form"
+            type="text"
+            name="text"
+            placeholder="Enter your mail here"
+          />
+        </div>
+        <button class="subscribe-button">Subscribe now</button>
       </div>
-    </section>
+    </div>
     <!--This comes from the newsletter component-->
     <!--This comes from the newsletter component-->
 
