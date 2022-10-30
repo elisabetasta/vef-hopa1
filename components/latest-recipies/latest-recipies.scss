@@ -1,5 +1,39 @@
-.recipes-wrapper {
-  margin-block-start: 5rem;
+.latest-recipies-titlelist {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.latest-recipies-checkbox {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  margin-left: auto;
+  margin-top: 1rem;
+}
+
+.latest-recipies-checkbox p {
+  font-family: "Playfair Display";
+  font-size: 24px;
+  font-weight: 600;
+  color: black;
+}
+
+.latest-recipies-checkbox input {
+  background: transparent;
+  height: 22px;
+  margin-right: 1rem;
+  width: 22px;
+}
+
+.latest-recipies-head h3 {
+  font-size: 4rem;
+  font-weight: 600;
+  margin-top: 0.5rem;
+}
+.latest-recipes .recipes-wrapper {
+  margin-block-start: 10rem;
   margin-inline: 1rem;
 
   @media (min-width: 800px) {
