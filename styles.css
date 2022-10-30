@@ -445,7 +445,6 @@ header .info-boxes {
   color: #5E5B69;
 }
 
-
 .latest-recipies-titlelist {
   display: flex;
   flex-direction: row;
@@ -573,32 +572,6 @@ nav {
   color: #ffffff;
 }
 
-.see-more-button {
-  text-align: center;
-  margin-block-start: 3rem;
-  margin-block-end: 5rem;
-  margin-inline: 0;
-  display: grid;
-  gap: var(--gutter);
-  grid-template-columns: repeat(var(--columns), 1fr);
-  grid-template-rows: auto;
-}
-
-.see-more-button a {
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  text-decoration: none;
-  color: #e3cdb1;
-  border: 2px;
-  border-color: #e3cdb1;
-  border-style: solid;
-  width: auto;
-  padding-block: 1rem;
-}
-
-
 .see-more-button-cards {
   text-align: center;
   margin-block-start: 3rem;
@@ -691,7 +664,7 @@ footer hr {
 }
 
 .recipes-wrapper {
-  margin-block-start: 10rem;
+  margin-block-start: 30rem;
   margin-inline: 1rem;
 }
 @media (min-width: 800px) {

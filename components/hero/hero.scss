@@ -50,6 +50,9 @@ html {
 }
 
 
+
+.wrapper header {
+
   background-color: var(--color-primary);
   height: 800px;
 }
@@ -76,6 +79,7 @@ nav a {
   font-size: 15px;
   color: #9b9b9b;
 }
+
 
 .yum-yum {
   // display: grid;
@@ -233,11 +237,16 @@ main {
   color: #5e5b69;
 }
 
+
+
+
 .hero-content {
   width: 48%;
   display: grid;
   align-content: center;
 }
+
+
 
 .info-boxes {
   display: grid;
@@ -253,21 +262,23 @@ main {
     background-position: center;
     background-size: cover;
     background-image: url(../../images/cake.png);
+
   }
+
+
 
   .hero-img-section {
     // display: inline-block;
     // position: relative;
     // align-items: center;
     visibility: hidden;
+
   }
 }
 
 @media (max-width: 800px) {
 
-
   .wrapper header {
-
     height: auto;
   }
 
@@ -297,6 +308,7 @@ main {
 
   .hero-texts-content {
     text-align: center;
+    
   }
 
   .hero-img-section {
@@ -304,6 +316,7 @@ main {
     // position: relative;
     // align-items: center;
     visibility: hidden;
+
   }
 
 
@@ -314,6 +327,7 @@ main {
   .hero-p {
     display: none;
   }
+
 
   .hero-button {
     width: 100%;
