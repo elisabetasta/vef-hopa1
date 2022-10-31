@@ -235,7 +235,7 @@ img {
   /* stærð 2 dálkar + 2*gutter */
 }
 
-.button:hover {
+.hero-button:hover {
   background-color: #e3cdb1;
   color: white;
 }
